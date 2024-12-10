@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{    /*Content location*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('background6.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{      /*Form box size*/
+    position: relative;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_value{
+    margin: 20px 50px;
+}
+
+h2{     /*title format*/
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{      /*Input box white bottom line*/
+    position: relative;
+    margin: 40px 0;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{    /*Input box labels "Email", "Password" format*/
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-40%);
+    color: #fff;
+    font-size: 1em;
+    transition: .5s;
+}
+
+input:focus ~ label,input:focus ~ ion-icon, input:valid ~ ion-icon
+input:valid ~ label{ /* label px movement when input space focused*/
+    top: -10%;
+}
+
+.inputbox input{    /*Input box input space format */
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon{     /* icons format*/
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    color: #fff;
+    font-size: 1.2em;
+    transition: .5s;
+
+}
+
+.forget{    /* "forgot password?" div format*/
+    margin: 0 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.forget label a{    /*label "forgot password" format*/
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.forget label a:hover{ /*label "forgot password" format when hovering cursor over it*/
+    text-decoration: underline;
+}
+
+button{ /* button format */
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{/*register "dont have an account" format*/
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+}
+.register p a{ /*register format*/
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover{/*register format when hovering cursor over it*/
+    text-decoration: underline;
+}
+
+@media(max-width: 980px){
+    .form-box{
+        scale: 200%;
+    }
+}
+
